@@ -1,0 +1,13 @@
+LDA 2500H   
+MOV C,A    
+ANI 0FH     
+MOV B,A
+MOV A,C
+XRA B
+RRC
+RRC
+RRC
+RRC
+ADD B
+STA 2550H  
+HLT        

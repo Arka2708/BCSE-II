@@ -1,0 +1,95 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="LM555-11" mainComp="false" Show_id="false" Show_Val="false" Pos="524,580" rotation="0" hflip="1" vflip="1" label="LM555-11" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="Ground" CircId="Ground-14" mainComp="false" Show_id="false" Show_Val="false" Pos="540,732" rotation="0" hflip="1" vflip="1" label="Ground-14" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-21" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="380,596" rotation="0" hflip="1" vflip="1" label="Resistor-21" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="500 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-24" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="584,520" rotation="0" hflip="1" vflip="1" label="Resistor-24" idLabPos="-16,-24" labelrot="0" valLabPos="-17,7" valLabRot="0" Resistance="440 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-33" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="648,560" rotation="90" hflip="1" vflip="1" label="Resistor-33" idLabPos="-16,-24" labelrot="0" valLabPos="12,-5" valLabRot="180" Resistance="240 Ω" />
+
+<item itemtype="Capacitor" CircId="Capacitor-41" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="440,672" rotation="90" hflip="1" vflip="1" label="Capacitor-41" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="0.1 µF" Resistance="1e-06 Ω" InitVolt="0 V" AutoStep="0 _Steps" />
+
+<item itemtype="Capacitor" CircId="Capacitor-48" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="500,660" rotation="90" hflip="1" vflip="1" label="Capacitor-48" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="0.1 µF" Resistance="1e-06 Ω" InitVolt="0 V" AutoStep="0 _Steps" />
+
+<item itemtype="Led" CircId="Led-72" mainComp="false" Show_id="false" Show_Val="false" Pos="648,508" rotation="90" hflip="1" vflip="1" label="Led-72" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-87" mainComp="false" Show_id="false" Show_Val="false" Pos="860,432" rotation="0" hflip="1" vflip="1" label="Oscope-87" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _Pixels" Basic_Y="135 _Pixels" BufferSize="600000 Samples" TimDiv="2488320000" TimPos="17066666,17066666,17066666,17066666," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" Trigger="4" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="FreqMeter" CircId="FreqMeter-88" mainComp="false" Show_id="false" Show_Val="false" Pos="784,568" rotation="0" hflip="1" vflip="1" label="FreqMeter-88" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="0.1 V" />
+
+<item itemtype="Battery" CircId="Battery-93" mainComp="false" Show_id="false" Show_Val="false" Pos="436,520" rotation="-180" hflip="1" vflip="1" label="Battery-93" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="0.001 Ω" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="540,548" />
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="600,612" />
+
+<item itemtype="Node" CircId="Node-35" mainComp="false" Pos="440,596" />
+
+<item itemtype="Node" CircId="Node-42" mainComp="false" Pos="440,604" />
+
+<item itemtype="Node" CircId="Node-46" mainComp="false" Pos="540,688" />
+
+<item itemtype="Node" CircId="Node-51" mainComp="false" Pos="540,676" />
+
+<item itemtype="Node" CircId="Node-90" mainComp="false" Pos="688,480" />
+
+<item itemtype="Node" CircId="Node-95" mainComp="false" Pos="540,520" />
+
+<item itemtype="Node" CircId="Node-98" mainComp="false" Pos="540,704" />
+
+<item itemtype="Connector" uid="connector-52" startpinid="LM555-11-Gnd" endpinid="Node-51-0" pointList="540,628,540,676" />
+
+<item itemtype="Connector" uid="connector-53" startpinid="Node-18-2" endpinid="LM555-11-Vcc" pointList="540,548,540,572" />
+
+<item itemtype="Connector" uid="connector-54" startpinid="Node-18-1" endpinid="LM555-11-Rst" pointList="540,548,516,548,516,588" />
+
+<item itemtype="Connector" uid="connector-55" startpinid="Resistor-21-rPin" endpinid="Node-35-0" pointList="396,596,440,596" />
+
+<item itemtype="Connector" uid="connector-58" startpinid="Resistor-24-rPin" endpinid="Node-30-0" pointList="600,520,600,612" />
+
+<item itemtype="Connector" uid="connector-59" startpinid="Resistor-21-lPin" endpinid="Node-30-1" pointList="364,596,344,596,344,636,600,636,600,612" />
+
+<item itemtype="Connector" uid="connector-60" startpinid="Node-30-2" endpinid="LM555-11-Dis" pointList="600,612,564,612" />
+
+<item itemtype="Connector" uid="connector-61" startpinid="LM555-11-Out" endpinid="Resistor-33-rPin" pointList="564,588,648,588,648,576" />
+
+<item itemtype="Connector" uid="connector-62" startpinid="Node-35-2" endpinid="LM555-11-Trg" pointList="440,596,516,596" />
+
+<item itemtype="Connector" uid="connector-63" startpinid="Node-35-1" endpinid="Node-42-0" pointList="440,596,440,604" />
+
+<item itemtype="Connector" uid="connector-64" startpinid="Node-42-2" endpinid="LM555-11-Thr" pointList="440,604,516,604" />
+
+<item itemtype="Connector" uid="connector-65" startpinid="Node-42-1" endpinid="Capacitor-41-lPin" pointList="440,604,440,656" />
+
+<item itemtype="Connector" uid="connector-66" startpinid="Capacitor-41-rPin" endpinid="Node-46-1" pointList="440,688,540,688" />
+
+<item itemtype="Connector" uid="connector-67" startpinid="Node-46-2" endpinid="Node-98-0" pointList="540,688,540,704" />
+
+<item itemtype="Connector" uid="connector-68" startpinid="LM555-11-CV" endpinid="Capacitor-48-lPin" pointList="516,612,500,612,500,644" />
+
+<item itemtype="Connector" uid="connector-69" startpinid="Capacitor-48-rPin" endpinid="Node-51-1" pointList="500,676,540,676" />
+
+<item itemtype="Connector" uid="connector-70" startpinid="Node-51-2" endpinid="Node-46-0" pointList="540,676,540,688" />
+
+<item itemtype="Connector" uid="Connector-73" startpinid="Resistor-33-lPin" endpinid="Led-72-rPin" pointList="648,544,648,524" />
+
+<item itemtype="Connector" uid="Connector-89" startpinid="Led-72-lPin" endpinid="Node-90-0" pointList="648,492,648,480,688,480" />
+
+<item itemtype="Connector" uid="Connector-91" startpinid="Node-90-2" endpinid="Oscope-87-Pin3" pointList="688,480,772,480" />
+
+<item itemtype="Connector" uid="Connector-92" startpinid="Node-90-1" endpinid="FreqMeter-88-lPin" pointList="688,480,688,568,744,568" />
+
+<item itemtype="Connector" uid="connector-57" startpinid="Resistor-24-lPin" endpinid="Node-95-0" pointList="568,520,540,520" />
+
+<item itemtype="Connector" uid="Connector-94" startpinid="Battery-93-lPin" endpinid="Node-95-1" pointList="452,520,540,520" />
+
+<item itemtype="Connector" uid="Connector-96" startpinid="Node-95-2" endpinid="Node-18-0" pointList="540,520,540,548" />
+
+<item itemtype="Connector" uid="Connector-97" startpinid="Battery-93-rPin" endpinid="Node-98-1" pointList="420,520,332,520,332,704,540,704" />
+
+<item itemtype="Connector" uid="Connector-99" startpinid="Node-98-2" endpinid="Ground-14-Gnd" pointList="540,704,540,716" />
+
+</circuit>
